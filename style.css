@@ -310,3 +310,264 @@ body {
     text-align: center;
   }
 }
+
+.why-build-section {
+  padding: 4rem 2rem;
+}
+
+.section-heading {
+  color: #ffffff;
+}
+
+.section-subheading {
+  color: #d2cce9;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.arrow-line {
+  display: inline-block;
+  width: 40px;
+  height: 2px;
+  background: #a99afc;
+  position: relative;
+  margin-left: 10px;
+}
+
+.arrow-line::after {
+  content: '';
+  position: absolute;
+  right: -10px;
+  top: -4px;
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 8px solid #a99afc;
+}
+
+.info-text {
+  color: #d2cce9;
+  font-size: .9rem;
+  max-width: 480px;
+}
+
+.card-custom {
+  background: radial-gradient(ellipse at top left, #2b2550, #1f1b3a);
+  border-radius: 20px;
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-top: 2rem;
+  transition: all .3s ease-in-out;
+}
+
+.card-custom:hover {
+  transform: translateY(-10px);
+}
+
+.card-custom img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #3a3270;
+  margin-bottom: 1.5rem;
+}
+
+.card-custom h5 {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.card-custom p {
+  color: #c0bcdf;
+  font-size: .9rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn-try {
+  background: linear-gradient(90deg, #bbaaff, #9990fc);
+  border: none;
+  color: #1f1b3a;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: background .3s ease;
+}
+
+.btn-try:hover {
+  background: linear-gradient(90deg, #d0caff, #b4acfc);
+}
+@media (max-width: 767px) {
+  .section-subheading {
+    font-size: 1.5rem;
+  }
+
+  .info-text {
+    font-size: .85rem;
+  }
+}
+
+.tech-section {
+  position: relative;
+  text-align: center;
+  padding: 5rem 2rem;
+  background: url('images/hydra_vr_back.png') no-repeat center;
+  background-size: cover;
+  border-radius: 0 0 100px 100px;
+}
+
+.tech-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(31, 27, 58, 0.85);
+  border-radius: 0 0 100px 100px;
+}
+
+.tech-section-content {
+  position: relative;
+  z-index: 2;
+}
+
+.tech-section h2 {
+  font-weight: 700;
+}
+
+.tech-section h5 {
+  color: #d2cce9;
+  font-weight: 300;
+  margin-top: .5rem;
+}
+
+.scroll-icon {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 45px;
+  height: 45px;
+  background: #fff;
+  color: #1f1b3a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  border: 4px solid #1f1b3a;
+  font-size: 1.3rem;
+}
+
+/* Logo section */
+.tech-logos {
+  padding: 6rem 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.tech-logos img {
+  max-height: 40px;
+  opacity: .85;
+}
+
+/* Process Section */
+.process-section {
+  padding: 4rem 2rem 6rem;
+}
+
+.section-subheading {
+  color: #d2cce9;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.info-text {
+  color: #d2cce9;
+  font-size: .9rem;
+}
+
+.process-steps {
+  margin-top: 3rem;
+  position: relative;
+}
+
+.step {
+  text-align: center;
+  position: relative;
+}
+
+.circle-number {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(to right, #a28bf8, #bbaaff);
+  color: #1f1b3a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: auto auto 1rem;
+  border: 6px solid #1f1b3a;
+  box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.1);
+}
+
+.step-title {
+  font-weight: 600;
+  font-size: .95rem;
+  margin-top: .5rem;
+  color: #fff;
+}
+
+.step-line {
+  height: 3px;
+  background: #a28bf8;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.step-arrow {
+  color: #a28bf8;
+  font-size: 1.2rem;
+  margin-bottom: .3rem;
+}
+@media (max-width: 768px) {
+  .tech-logos {
+    gap: 1.5rem;
+  }
+
+  .step-line {
+    display: none;
+  }
+
+  .step {
+    margin-bottom: 2rem;
+  }
+
+  .section-subheading {
+    font-size: 1.5rem;
+  }
+
+  .circle-number {
+    width: 65px;
+    height: 65px;
+    font-size: 1.2rem;
+  }
+}
+
+.tech-logos img.tech-logo {
+  max-height: 80px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter .3s ease;
+}
+
+.tech-logos img.tech-logo:hover {
+  filter: grayscale(0%);
+}
