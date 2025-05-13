@@ -305,7 +305,7 @@ body {
   }
 
 }
-@media screen and (max-width: 768) {
+@media screen and (min-width: 768) {
   .intro {
     text-align: center;
   }
