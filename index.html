@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hydra VR</title>
+
+    <!-- Bootstrap 5 CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark px-4 py-3">
+      <img src="images/logo.png" alt="Logo" class="logo-img logo-rotate" />
+      <a class="navbar-brand fw-bold fs-3 text-white" href="#">HYDRA</a>
+
+      <button
+        class="navbar-toggler border-0"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div
+        class="collapse navbar-collapse justify-content-between"
+        id="mainNavbar"
+      >
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-4 text-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Technologies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">How To</a>
+          </li>
+        </ul>
+        <div class="d-flex gap-2 justify-content-center mt-3 mt-lg-0">
+          <button class="btn btn-outline-light rounded-pill">Contact Us</button>
+          <button class="btn btn-light rounded-pill">Join Hydra</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="hero container py-5 d-flex flex-column flex-lg-row align-items-center justify-content-between gap-5"
+    >
+      <div class="hero-text text-white text-center text-lg-start">
+        <h1 class="fw-bold">
+          <span style="color: #beb4e7">Dive</span> Into The Depths <br />
+          <span class="typing-effect" style="color: #8176af"
+            >of Virtual Reality</span
+          >
+        </h1>
+        <p class="text-secondary mt-3">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore.
+        </p>
+        <button class="btn btn-purple mt-4 rounded-pill px-4 py-2">
+          Build Your World <i class="fas fa-arrow-right ms-2"></i>
+        </button>
+      </div>
+      <div class="hero-image">
+        <img src="images/hero.png" alt="VR Girl" class="rounded-image" />
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section container my-5">
+      <div
+        class="contact-box d-flex flex-wrap justify-content-between align-items-start gap-4 p-4"
+      >
+        <div class="contact-item d-flex align-items-center gap-3">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <h4>Pay Us a Visit</h4>
+            <p>Union St, Seattle, WA 98101, United States</p>
+          </div>
+        </div>
+        <div class="contact-item d-flex align-items-center gap-3">
+          <i class="fas fa-phone-alt"></i>
+          <div>
+            <h4>Give Us a Call</h4>
+            <p>(110) 111-1010</p>
+          </div>
+        </div>
+        <div class="contact-item d-flex align-items-center gap-3">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <h4>Send Us a Message</h4>
+            <p>Contact@HydraVRTech.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
